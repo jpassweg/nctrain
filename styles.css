@@ -1,0 +1,105 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color:#20639B;
+}
+
+.mid {
+    width: 600px;
+    margin: auto;
+}
+
+.box {
+    margin: 20px 0;
+    padding: 5px;
+    background-color: rgb(15, 39, 59);
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    color: white;
+}
+
+.lefttext {
+    float: left;
+}
+
+.righttext {
+    float: right;
+}
+
+.shadow {
+    box-shadow: 0 0 0 0 rgba(0,0,0,0.08);
+    transition: all 0.3s ease-in-out;
+}
+
+.shadow:hover {
+    box-shadow: 0 6px 30px 3px rgba(0, 0, 0, 0.1);
+}
+
+.buttontitle {
+    margin: 20px 0;
+    padding: 5px 0;
+    height: 30px;
+    float: left;
+    width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.button {
+    margin: 20px 0;
+    padding: 5px 0;
+    height: 40px;
+    width: 30%;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 700px) {
+    .mid {
+      width: 90%; /* The width is 100%, when the viewport is 800px or smaller */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .box {
+        margin: 20px 0;
+        padding: 5px;
+        background-color: rgb(15, 39, 59);
+        width: 100%;
+        height: 70px;
+        border-radius: 7px;
+        color: white;
+    }
+
+    .buttontitle {
+        margin: 20px 0;
+        padding: 5px 0;
+        height: 70px;
+        float: left;
+        width: 70%;
+    }
+
+    .button {
+        margin: 20px 0;
+        padding: 5px 0;
+        height: 80px;
+        width: 30%;
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+    }
+}
