@@ -6,7 +6,6 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
         <link rel="stylesheet" href="styles.css">
-        <script src="scripts.js"></script>
     </head>
 
     <body>
@@ -19,8 +18,8 @@
                 Press on the green boxes to start a whole passage of the exam. Press on the individual boxes to run single exercises.
             </div>
 
-            <div class="row shadow" >
-                <p id="status"></p>
+            <div class="row shadow" id="timer">
+                Timer
             </div>
 
             <div class="row">
@@ -28,27 +27,27 @@
                 <button class="button">Start</button>
             </div>
             
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(1, 18)" id="part1">
                 <div class="lefttext">Muster Zuordnen</div>
                 <div class="righttext">min 18</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(2, 50)" id="part2">
                 <div class="lefttext">Med. nat. Grundverständnis</div>
                 <div class="righttext">min 50</div>
             </div>
             
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(3, 12)" id="part3">
                 <div class="lefttext">Schlauchfiguren</div>
                 <div class="righttext">min 12</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(4, 50)" id="part4">
                 <div class="lefttext">Qfp</div>
                 <div class="righttext">min 50</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(5, 8)" id="part5">
                 <div class="lefttext">Konzentrationstest</div>
                 <div class="righttext">min 08</div>
             </div>
@@ -59,35 +58,37 @@
                     <button class="button">Start</button>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(6, 4)" id="part6">
                 <div class="lefttext">Figuren lernen</div>
                 <div class="righttext">min 04</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(7, 6)" id="part7">
                 <div class="lefttext">Fakten lernen</div>
                 <div class="righttext">min 06</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(8, 45)" id="part8">
                 <div class="lefttext">Textverständnis</div>
                 <div class="righttext">min 45</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(9, 5)" id="part9">
                 <div class="lefttext">Figuren wiedergeben</div>
                 <div class="righttext">min 05</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(10, 7)" id="part10">
                 <div class="lefttext">Fakten wiedergeben</div>
                 <div class="righttext">min 07</div>
             </div>
 
-            <div class="box shadow">
+            <div class="box shadow" onclick="startExercise(11, 50)" id="part11">
                 <div class="lefttext">Programme und Tabelle</div>
                 <div class="righttext">min 50</div>
             </div>
         </div>
+
+        <script src="scripts.js"></script> 
     </body>
 </html>
