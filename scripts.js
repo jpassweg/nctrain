@@ -51,7 +51,7 @@ function startTimer(startTime, exercise, myCounter) {
                 document.getElementById("timer").innerHTML = "Timer";
             }
             
-            if(seconds >= length) {
+            if(minutes >= length) {
                 document.getElementById("part" + exercise).style.backgroundColor = 'rgb(15, 39, 59)';
                 clearInterval(x);
 
