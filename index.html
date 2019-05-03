@@ -9,81 +9,101 @@
     </head>
 
     <body>
+        <audio id="startsound">
+            <source src="start.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="stopsound">
+            <source src="stop.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="nextsound">
+            <source src="next.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <audio id="konzsound">
+                <source src="konzentrationstext.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+        </audio>
+
         <div class="mid">
             <div class="row">
                 <h1 class="shadow">NC timer</h1>
             </div>
 
             <div class="row shadow">
-                Press on the green boxes to start a whole passage of the exam. Press on the individual boxes to run single exercises.
+                Press on the green boxes to start a whole passage of the exam. Press on the individual boxes to run single exercises. 
+                Press on the timer box to always show the timer.
             </div>
 
-            <div class="row shadow" id="timer">
+            <div class="row shadow" id="timer" onclick="setShowTimer()">
                 Timer
             </div>
 
             <div class="row">
                 <h2 class="buttontitle shadow">Testteil 1</h2>
-                <button class="button">Start</button>
+                <button class="button" onclick="startPartOne()">Start</button>
             </div>
             
-            <div class="box shadow" onclick="startExercise(1, 18)" id="part1">
+            <div class="box shadow" onclick="startExercise(1)" id="part1">
                 <div class="lefttext">Muster Zuordnen</div>
                 <div class="righttext">min 18</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(2, 50)" id="part2">
+            <div class="box shadow" onclick="startExercise(2)" id="part2">
                 <div class="lefttext">Med. nat. Grundverständnis</div>
                 <div class="righttext">min 50</div>
             </div>
             
-            <div class="box shadow" onclick="startExercise(3, 12)" id="part3">
+            <div class="box shadow" onclick="startExercise(3)" id="part3">
                 <div class="lefttext">Schlauchfiguren</div>
                 <div class="righttext">min 12</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(4, 50)" id="part4">
+            <div class="box shadow" onclick="startExercise(4)" id="part4">
                 <div class="lefttext">Qfp</div>
                 <div class="righttext">min 50</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(5, 8)" id="part5">
+            <div class="box shadow" onclick="startExercise(5)" id="part5">
                 <div class="lefttext">Konzentrationstest</div>
                 <div class="righttext">min 08</div>
             </div>
 
-
             <div class="row">
                     <h2 class="buttontitle shadow">Testteil 2 (Nach Mittagspause)</h2>
-                    <button class="button">Start</button>
+                    <button class="button" onclick="startPartTwo()">Start</button>
             </div>
 
-            <div class="box shadow" onclick="startExercise(6, 4)" id="part6">
+            <div class="box shadow" onclick="startExercise(6)" id="part6">
                 <div class="lefttext">Figuren lernen</div>
                 <div class="righttext">min 04</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(7, 6)" id="part7">
+            <div class="box shadow" onclick="startExercise(7)" id="part7">
                 <div class="lefttext">Fakten lernen</div>
                 <div class="righttext">min 06</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(8, 45)" id="part8">
+            <div class="box shadow" onclick="startExercise(8)" id="part8">
                 <div class="lefttext">Textverständnis</div>
                 <div class="righttext">min 45</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(9, 5)" id="part9">
+            <div class="box shadow" onclick="startExercise(9)" id="part9">
                 <div class="lefttext">Figuren wiedergeben</div>
                 <div class="righttext">min 05</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(10, 7)" id="part10">
+            <div class="box shadow" onclick="startExercise(10)" id="part10">
                 <div class="lefttext">Fakten wiedergeben</div>
                 <div class="righttext">min 07</div>
             </div>
 
-            <div class="box shadow" onclick="startExercise(11, 50)" id="part11">
+            <div class="box shadow" onclick="startExercise(11)" id="part11">
                 <div class="lefttext">Programme und Tabelle</div>
                 <div class="righttext">min 50</div>
             </div>
